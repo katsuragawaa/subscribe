@@ -1,3 +1,9 @@
 #!/usr/bin/env node
 
-console.log('test')
+function main() {
+    console.log('test')
+}
+
+main()
+
+module.exports = main
