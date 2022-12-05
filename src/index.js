@@ -4,6 +4,7 @@ const inquirer = require('inquirer')
 const questions = require('./constants.js')
 const { welcome, prepare } = require('./printers.js')
 const sleep = require('./utils.js')
+const calculate = require('./lib.js')
 
 async function main() {
     welcome()
@@ -19,6 +20,9 @@ async function main() {
 
         hasNext = item.continue
     }
+
+    const result = calculate(input)
+    console.log(result)
 }
 
 main()
