@@ -1,6 +1,6 @@
 ## Subscribe challenge
 
-You don't need to download the repo to run locally, just:
+It can be run without downloading the repo with:
 
 ```
 npx subscribe-challenge
