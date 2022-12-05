@@ -2,7 +2,7 @@
 
 const inquirer = require('inquirer')
 const questions = require('./constants.js')
-const { welcome, prepare } = require('./printers.js')
+const { welcome, prepare, output } = require('./printers.js')
 const sleep = require('./utils.js')
 const calculate = require('./lib.js')
 
@@ -22,7 +22,8 @@ async function main() {
     }
 
     const result = calculate(input)
-    console.log(result)
+
+    output(result.items, result.salesTax, result.totalWithoutTax)
 }
 
 main()
